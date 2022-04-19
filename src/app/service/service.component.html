@@ -1,0 +1,14 @@
+<h3>All available service records!</h3>
+<textarea rows="15" cols="70">{{ data }}</textarea>
+<br><br>
+<h3>Search By Service Id</h3>
+<input type="text" (focusout)="onKey($event)" [value]="serviceId">
+<button (click)="searchById()">Search</button>
+<br><br>
+<textarea rows="15" cols="70">{{ filterByIdData }}</textarea>
+<br><br>
+<h3>Search By Status</h3>
+<input type="text" (focusout)="onStatusFocusOut($event)" [value]="serviceStatus">
+<button (click)="searchByStatus()">Search</button>
+<br><br>
+<textarea rows="15" cols="70">{{ filterByStatusData }}</textarea>
